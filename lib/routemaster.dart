@@ -526,7 +526,7 @@ class RoutemasterDelegate extends RouterDelegate<RouteData>
 
   void _setHasReported(_ReportType reportType) {
     _reported = reportType;
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       _reported = _ReportType.none;
     });
   }
