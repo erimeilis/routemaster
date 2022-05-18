@@ -766,7 +766,7 @@ class RoutemasterDelegate extends RouterDelegate<RouteData>
     _rebuildRouter(context);
 
     // Already building; schedule rebuild for next frame
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       _updateCurrentConfiguration();
     });
   }
