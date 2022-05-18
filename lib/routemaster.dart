@@ -570,7 +570,7 @@ class RoutemasterDelegate extends RouterDelegate<RouteData>
 
       if (_isBuilding) {
         // Schedule update
-        WidgetsBinding.instance?.addPostFrameCallback((_) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
           _updateCurrentConfiguration(
             requestSource: requestSource,
             isReplacement: isReplacement,
