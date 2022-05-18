@@ -720,7 +720,7 @@ class RoutemasterDelegate extends RouterDelegate<RouteData>
           notifyListeners();
         }
 
-        WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+        WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
           if (_state.pendingNavigation != null) {
             // Retry navigation
             _navigate(
